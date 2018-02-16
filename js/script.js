@@ -1,10 +1,6 @@
-
-const alphabet = [
-  ["q","w","e","r","t","y","u","i","o","p","[","]"],
-  ["a","s","d","f","g","h","j","k","l",";","'"],
-  ["z","x","c","v","b","n","m",",",".","/"]
-];
-
-console.log(`${alphabet[1][5]}${alphabet[0][2]}${alphabet[1][8]}${alphabet[1][8]}${alphabet[0][8]}`);
-console.log(`${alphabet[1][6]}${alphabet[1][0]}${alphabet[2][3]}${alphabet[1][0]}${alphabet[1][1]}${alphabet[2][2]}${alphabet[0][3]}${alphabet[0][7]}${alphabet[0][9]}${alphabet[0][4]}`);
-console.log(`${alphabet[0][4]}${alphabet[0][3]}${alphabet[1][0]}${alphabet[0][7]}${alphabet[2][5]}${alphabet[0][2]}${alphabet[0][3]}`);
+const alphabet = "qwertyuiop[]asdfghjkl;'zxcvbnm,./";
+const arr = alphabet.split("");
+const keyboard = [arr.slice(0, 12) , arr.slice(12, 23), arr.slice(23, 33)];
+console.log(`${keyboard[1][5]}${keyboard[0][2]}${keyboard[1][8]}${keyboard[1][8]}${keyboard[0][8]}`);
+console.log(`${keyboard[1][6]}${keyboard[1][0]}${keyboard[2][3]}${keyboard[1][0]}${keyboard[1][1]}${keyboard[2][2]}${keyboard[0][3]}${keyboard[0][7]}${keyboard[0][9]}${keyboard[0][4]}`);
+console.log(`${keyboard[0][4]}${keyboard[0][3]}${keyboard[1][0]}${keyboard[0][7]}${keyboard[2][5]}${keyboard[0][2]}${keyboard[0][3]}`);
